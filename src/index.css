@@ -1,0 +1,11 @@
+:root { font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; line-height: 1.4; font-weight: 400; color-scheme: dark; color: rgba(255,255,255,0.95); background: #0a0a15; }
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+body { margin: 0; }
+
+button { cursor: pointer; }
+
+/* Smooth scrolling and snap for mobile */
+html { scroll-behavior: smooth; }
