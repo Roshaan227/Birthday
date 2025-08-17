@@ -1,16 +1,11 @@
 export function getNextBirthdayDate(birthdayISODateString) {
   const [yearStr, monthStr, dayStr] = birthdayISODateString.split("-");
+  const year = Number(yearStr);
   const monthIndex = Number(monthStr) - 1;
   const day = Number(dayStr);
 
-  const now = new Date();
-  const currentYear = now.getFullYear();
-  const thisYearBirthday = new Date(currentYear, monthIndex, day, 0, 0, 0, 0);
-
-  if (thisYearBirthday.getTime() >= now.getTime()) {
-    return thisYearBirthday;
-  }
-  return new Date(currentYear + 1, monthIndex, day, 0, 0, 0, 0);
+  // Use the year specified in the config
+  return new Date(year, monthIndex, day, 0, 0, 0, 0);
 }
 
 export function getCountdownParts(targetDate) {
