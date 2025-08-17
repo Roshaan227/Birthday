@@ -1,7 +1,7 @@
 // Editable configuration for the birthday site
 // Update these values to instantly change the recipient and date
 
-export const recipientName = "Alex"; // Change the name here
+export const recipientName = "Faiqa Abid"; // Change the name here
 
 // Use YYYY-MM-DD for the next birthday occurrence (local time)
 // If the date has passed this year, the app will automatically roll to next year
