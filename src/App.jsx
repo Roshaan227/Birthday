@@ -40,7 +40,11 @@ function App() {
   }, []);
 
   const nextDate = useMemo(() => getNextBirthdayDate(birthdayDate), []);
-  const dateLabel = useMemo(() => nextDate.toLocaleDateString(), [nextDate]);
+  const dateLabel = useMemo(() => new Intl.DateTimeFormat("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(nextDate), [nextDate]);
 
   return (
     <div className="app">

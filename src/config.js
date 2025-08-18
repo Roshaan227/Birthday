@@ -3,9 +3,9 @@
 
 export const recipientName = "Faiqa Abid"; // Change the name here
 
-// Use YYYY-MM-DD for the next birthday occurrence (local time)
-// If the date has passed this year, the app will automatically roll to next year
-export const birthdayDate = "2025-08-18"; // Change the date here
+// Set the birthday date as a human-readable string, e.g. "15 August 2025"
+// You can also use ISO format "2025-08-15" if you prefer
+export const birthdayDate = "15 August 2025"; // Change the date here
 
 export const themeColors = {
   primary: "#ff6ec7", // candy pink
